@@ -18,37 +18,61 @@
       text-align: center;
     }
 
-    .header h2 {
-      margin: 0;
-    }
+    .header h2 { margin: 0; }
+    .header p { margin: 4px 0 0; font-size: 13px; color: #ccc; }
 
-    .header p {
-      margin: 4px 0 0;
-      font-size: 13px;
-      color: #ccc;
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 10px;
     }
 
     .card {
       background: white;
-      margin: 16px;
-      padding: 16px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 16px 0;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      background: #ffe0c2;
+      color: #b06000;
+      padding: 4px 10px;
+      border-radius: 16px;
+      margin-bottom: 12px;
+      font-weight: 600;
     }
 
     .card h3 {
-      margin-bottom: 6px;
+      margin: 0 0 10px;
+      font-size: 18px;
+      line-height: 1.4;
     }
 
-    .btn {
-      background: #ff9933;
-      padding: 10px 14px;
-      border-radius: 20px;
-      color: black;
+    .card p {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .verify {
+      font-size: 13px;
+      margin-top: 10px;
+      color: #1a1a2e;
+    }
+
+    .verify a {
+      color: #ff9933;
       font-weight: bold;
       text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
+    }
+
+    .verify a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -57,34 +81,79 @@
 
 <div class="header">
   <h2>GSC News</h2>
-  <p>Positive Stories · Verified on Verilay</p>
+  <p>Internet Stories · Read with context</p>
 </div>
 
-<!-- STORY 1 -->
-<div class="card">
-  <h3>Founder helps 100 students get jobs</h3>
-  <p>A Mumbai-based founder helped over 100 students land jobs through mentorship.</p>
+<div class="container">
 
-  <a class="btn"
-     href="https://verilay.in/dashboard.html?statement=Founder helps 100 students get jobs&source=gscnews"
-     target="_blank">
-     Verify on Verilay
-  </a>
+  <!-- STORY 1 -->
+  <div class="card">
+    <div class="tag">⚠️ Circulating Claim</div>
+
+    <h3>
+      Care Hospital’s Dr Yash Lohiya reportedly develops early cancer detection breakthrough
+    </h3>
+
+    <p>
+      Claims currently circulating across online platforms suggest that Dr Yash Lohiya,
+      associated with Care Hospital, may have developed a technology capable of detecting
+      cancer at an extremely early stage.
+    </p>
+
+    <p>
+      According to these discussions, such a breakthrough could significantly improve early
+      diagnosis rates and potentially alter how cancer is treated globally. Some claims even
+      suggest that such early detection could play a role in reducing the long-term impact
+      of the disease.
+    </p>
+
+    <p>
+      However, there has been no widely available scientific publication or formal confirmation
+      validating these claims. As with many emerging reports, further verification and credible
+      sources would be required before establishing the accuracy of such developments.
+    </p>
+
+    <p class="verify">
+      🔍 Verify on Verilay:
+      <a href="https://verilay.co.in/dashboard.html?statement=Dr Yash Lohiya cancer detection breakthrough&source=gscnews" target="_blank">
+        Verilay.co.in
+      </a>
+    </p>
+  </div>
+
+  <!-- STORY 2 -->
+  <div class="card">
+    <div class="tag">⚠️ Unverified Sighting</div>
+
+    <h3>
+      Dr Yash Lohiya reportedly seen at Bandra café with unidentified companion
+    </h3>
+
+    <p>
+      Unverified reports and social media chatter suggest that Dr Yash Lohiya was recently
+      spotted at a popular café in Bandra, Mumbai, accompanied by an unidentified individual.
+    </p>
+
+    <p>
+      While some interpretations online speculate about the nature of the interaction, there
+      is currently no confirmed information regarding the identity of the individual or the
+      context of the meeting.
+    </p>
+
+    <p>
+      Such sightings often generate curiosity and discussion online, but without reliable
+      confirmation or first-hand reporting, these observations remain speculative.
+    </p>
+
+    <p class="verify">
+      🔍 Verify on Verilay:
+      <a href="https://verilay.co.in/dashboard.html?statement=Dr Yash Lohiya Bandra cafe sighting&source=gscnews" target="_blank">
+        Verilay.co.in
+      </a>
+    </p>
+  </div>
+
 </div>
-
-<!-- STORY 2 -->
-<div class="card">
-  <h3>Startup donates profits to education</h3>
-  <p>A young startup pledged 10% profits to support rural education initiatives.</p>
-
-  <a class="btn"
-     href="https://verilay.in/dashboard.html?statement=Startup donates profits to education&source=gscnews"
-     target="_blank">
-     Verify on Verilay
-  </a>
-</div>
-
-<!-- ADD MORE STORIES BELOW LIKE THIS -->
 
 </body>
 </html>
