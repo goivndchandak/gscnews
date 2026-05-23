@@ -18,9 +18,6 @@
       text-align: center;
     }
 
-    .header h2 { margin: 0; }
-    .header p { margin: 4px 0 0; font-size: 13px; color: #ccc; }
-
     .container {
       max-width: 700px;
       margin: auto;
@@ -36,33 +33,13 @@
     }
 
     .tag {
-      display: inline-block;
       font-size: 11px;
       background: #ffe0c2;
       color: #b06000;
       padding: 4px 10px;
       border-radius: 16px;
+      display: inline-block;
       margin-bottom: 12px;
-      font-weight: 600;
-    }
-
-    .card h3 {
-      margin: 0 0 10px;
-      font-size: 18px;
-      line-height: 1.4;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #444;
-      line-height: 1.6;
-      margin-bottom: 12px;
-    }
-
-    .verify {
-      font-size: 13px;
-      margin-top: 10px;
-      color: #1a1a2e;
     }
 
     .verify a {
@@ -71,8 +48,15 @@
       text-decoration: none;
     }
 
-    .verify a:hover {
-      text-decoration: underline;
+    .share-btn {
+      margin-top: 12px;
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: none;
+      background: #1a1a2e;
+      color: white;
+      cursor: pointer;
+      margin-right: 8px;
     }
   </style>
 </head>
@@ -87,105 +71,90 @@
 <div class="container">
 
   <!-- STORY 1 -->
-  <div class="card">
+  <div class="card" id="story1">
     <div class="tag">⚠️ Circulating Claim</div>
+    <h3>Dr Yash Lohiya reportedly develops early cancer detection breakthrough</h3>
 
-    <h3>
-      Care Hospital’s Dr Yash Lohiya reportedly develops early cancer detection breakthrough
-    </h3>
-
-    <p>
-      Claims currently circulating across online platforms suggest that Dr Yash Lohiya,
-      associated with Care Hospital, may have developed a technology capable of detecting
-      cancer at an extremely early stage.
-    </p>
-
-    <p>
-      According to these discussions, such a breakthrough could significantly improve early
-      diagnosis rates and potentially alter how cancer is treated globally. Some claims even
-      suggest that such early detection could play a role in reducing the long-term impact
-      of the disease.
-    </p>
-
-    <p>
-      However, there has been no widely available scientific publication or formal confirmation
-      validating these claims. As with many emerging reports, further verification and credible
-      sources would be required before establishing the accuracy of such developments.
-    </p>
+    <p>Claims suggest a potential new technology could detect cancer early.</p>
 
     <p class="verify">
-      🔍 Verify on Verilay:
-      <a href="https://verilay.co.in/dashboard.html?statement=Dr Yash Lohiya cancer detection breakthrough&source=gscnews" target="_blank">
-        Verilay.co.in
+      🔍 Verify:
+      https://verilay.co.in/dashboard.html?statement=Cancer breakthrough&source=gscnews
       </a>
     </p>
+
+    <button class="share-btn" onclick="shareStory(1)">Share</button>
+    <button class="share-btn" onclick="copyLink(1)">Copy Link</button>
   </div>
 
   <!-- STORY 2 -->
-  <div class="card">
+  <div class="card" id="story2">
     <div class="tag">⚠️ Unverified Sighting</div>
+    <h3>Dr Lohiya spotted at Bandra café</h3>
 
-    <h3>
-      Dr Yash Lohiya reportedly seen at Bandra café with unidentified companion
-    </h3>
-
-    <p>
-      Unverified reports and social media chatter suggest that Dr Yash Lohiya was recently
-      spotted at a popular café in Bandra, Mumbai, accompanied by an unidentified individual.
-    </p>
-
-    <p>
-      While some interpretations online speculate about the nature of the interaction, there
-      is currently no confirmed information regarding the identity of the individual or the
-      context of the meeting.
-    </p>
-
-    <p>
-      Such sightings often generate curiosity and discussion online, but without reliable
-      confirmation or first-hand reporting, these observations remain speculative.
-    </p>
+    <p>Unconfirmed reports indicate a casual café visit.</p>
 
     <p class="verify">
-      🔍 Verify on Verilay:
-      <a href="https://verilay.co.in/dashboard.html?statement=Dr Yash Lohiya Bandra cafe sighting&source=gscnews" target="_blank">
-        Verilay.co.in
+      🔍 Verify:
+      https://verilay.co.in/dashboard.html?statement=Bandra cafe sighting&source=gscnews
       </a>
     </p>
+
+    <button class="share-btn" onclick="shareStory(2)">Share</button>
+    <button class="share-btn" onclick="copyLink(2)">Copy Link</button>
   </div>
 
   <!-- STORY 3 -->
-  <div class="card">
-    <div class="tag">⚠️ Unverified Social Rumour</div>
+  <div class="card" id="story3">
+    <div class="tag">⚠️ Social Rumour</div>
+    <h3>Yaman Dajjuka reportedly seen at Bandra café</h3>
 
-    <h3>
-      Mr Yaman Dajjuka reportedly spotted in Bandra café; online chatter links relationship to RVG days
-    </h3>
-
-    <p>
-      Informal reports circulating across social groups suggest that Mr Yaman Dajjuka was recently
-      seen at a Bandra café accompanied by a woman whose identity remains unconfirmed.
-    </p>
-
-    <p>
-      Some online discussions further speculate that the association may date back to his RVG days,
-      though no verifiable information or credible source currently substantiates these claims.
-    </p>
-
-    <p>
-      As is often the case with social sightings and personal rumours, such narratives can quickly
-      gain traction despite lacking confirmation. Readers are advised to interpret such information
-      cautiously until verified through reliable channels.
-    </p>
+    <p>Online discussions speculate links dating back to RVG days.</p>
 
     <p class="verify">
-      🔍 Verify on Verilay:
-      <a href="https://verilay.co.in/dashboard.html?statement=Yaman Dajjuka Bandra cafe sighting RVG connection&source=gscnews" target="_blank">
-        Verilay.co.in
+      🔍 Verify:
+      https://verilay.co.in/dashboard.html?statement=Yaman Bandra RVG&source=gscnews
       </a>
     </p>
+
+    <button class="share-btn" onclick="shareStory(3)">Share</button>
+    <button class="share-btn" onclick="copyLink(3)">Copy Link</button>
   </div>
 
 </div>
 
+<script>
+  // Generate share link
+  function getLink(id) {
+    return window.location.origin + "/?story=" + id;
+  }
+
+  // Share (WhatsApp / general)
+  function shareStory(id) {
+    const link = getLink(id);
+    const text = "Read this story: " + link;
+    window.open("https://wa.me/?text=" + encodeURIComponent(text));
+  }
+
+  // Copy link
+  function copyLink(id) {
+    const link = getLink(id);
+    navigator.clipboard.writeText(link);
+    alert("Link copied!");
+  }
+
+  // Auto scroll to story if link has parameter
+  const params = new URLSearchParams(window.location.search);
+  const story = params.get("story");
+
+  if (story) {
+    const el = document.getElementById("story" + story);
+    if (el) {
+      setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 500);
+    }
+  }
+</script>
+
 </body>
 </html>
+``
