@@ -9,13 +9,12 @@
       font-family: Georgia, serif;
       margin: 0;
       background: #f4f6f8;
-      color: #111;
     }
 
     .header {
       background: #111;
       color: white;
-      padding: 20px;
+      padding: 22px;
       text-align: center;
       border-bottom: 4px solid #ff7a00;
     }
@@ -23,15 +22,15 @@
     .container {
       max-width: 780px;
       margin: auto;
-      padding: 15px;
+      padding: 16px;
     }
 
     .card {
       background: white;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     }
 
     .card img {
@@ -41,7 +40,7 @@
     }
 
     .content {
-      padding: 18px;
+      padding: 20px;
     }
 
     .tag {
@@ -57,8 +56,8 @@
 
     p {
       font-size: 15px;
-      color: #333;
       line-height: 1.7;
+      color: #333;
     }
 
     .btn {
@@ -94,103 +93,127 @@
 
 <div class="container">
 
-  <!-- CORE STORIES -->
-  <div class="card" id="story1">
-    <img src="https://images.unsplash.com/photo-1580281657521-5fa7b164755f">
+<!-- CORE STORIES -->
+
+<div class="card" id="story1">
+  <img src="https://source.unsplash.com/800x600/?hospital,technology">
+  <div class="content">
+    <div class="tag">⚠️ HEALTH</div>
+    <h3>Early cancer detection breakthrough reportedly gaining attention</h3>
+    <p>
+      Discussions across healthcare and research communities suggest that early-stage cancer detection
+      methods may be advancing significantly, with some chatter referencing work linked to medical
+      practitioner <strong>Dr Yash Lohiya</strong>.
+    </p>
+    <p>
+      The idea, if validated, could allow earlier identification of cancer markers, potentially
+      improving treatment success rates. However, no peer-reviewed confirmation or institutional
+      announcement is currently available.
+    </p>
+    <button class="btn share-btn" onclick="shareStory(1)">Share</button>
+    https://verilay.co.inVerify on Verilay</a>
+  </div>
+</div>
+
+<div class="card" id="story2">
+  <img src="https://source.unsplash.com/800x600/?cafe,coffee">
+  <div class="content">
+    <div class="tag">⚠️ SOCIAL</div>
+    <h3>Unverified café sighting involving Dr Yash Lohiya sparks online discussion</h3>
+    <p>
+      Reports circulating in informal urban circles indicate a possible Bandra café sighting
+      involving <strong>Dr Yash Lohiya</strong>.
+    </p>
+    <p>
+      While interactions like these may be routine, extended engagement has triggered curiosity,
+      evolving into broader discussion across social channels.
+    </p>
+    <button class="btn share-btn" onclick="shareStory(2)">Share</button>
+    https://verilay.co.inVerify on Verilay</a>
+  </div>
+</div>
+
+<div class="card" id="story3">
+  <img src="https://source.unsplash.com/800x600/?coffee,restaurant">
+  <div class="content">
+    <div class="tag">👀 SOCIAL</div>
+    <h3>Shlok Inani spotted at Bandra café with mystery companion</h3>
+    <p>
+      A recent sighting at a popular Bandra café has generated curiosity after
+      <strong>Shlok Inani</strong> was reportedly seen in a prolonged conversation
+      with an unidentified companion.
+    </p>
+    <p>
+      With no clarity on context or intent, the observation remains speculative,
+      though it has already gained traction in close social circles.
+    </p>
+    <button class="btn share-btn" onclick="shareStory(3)">Share</button>
+    https://verilay.co.inVerify on Verilay</a>
+  </div>
+</div>
+
+<!-- AUTO-GENERATED STORIES (15 FULL ARTICLES) -->
+
+<script>
+const topics = [
+"AI tools replacing entry-level roles across businesses",
+"Startup valuations undergoing correction phase",
+"Freelance economy growing faster than traditional hiring",
+"Developers increasingly depending on AI copilots",
+"Private communities replacing social media",
+"Short trips becoming preferred global travel pattern",
+"Hybrid work models remaining dominant",
+"Blockchain startups regaining traction",
+"Digital identity systems becoming mandatory",
+"Investors shifting to profitability over growth",
+"Indian SaaS startups expanding globally",
+"EdTech platforms shifting strategies post-pandemic",
+"Creator economy moving toward niche communities",
+"Remote tools increasing productivity rates",
+"AI workflows transforming modern workplaces"
+];
+
+topics.forEach((topic, i) => {
+  let id = i + 4;
+  document.querySelector(".container").innerHTML += `
+  <div class="card" id="story${id}">
+    <img src="https://source.unsplash.com/800x600/?technology,${id}">
     <div class="content">
-      <div class="tag">⚠️ HEALTH</div>
-      <h3>Early cancer detection breakthrough reportedly emerging</h3>
+      <div class="tag">📊 TECH</div>
+      <h3>${topic}</h3>
       <p>
-        Discussions suggest work linked to <strong>Dr Yash Lohiya</strong> may enable very early-stage cancer detection.
-        However, no verified publication exists yet.
+        Emerging discussions across industry circles suggest that ${topic.toLowerCase()}
+        is becoming an increasingly visible trend in modern economic and professional environments.
       </p>
-      <button class="btn share-btn" onclick="shareStory(1)">Share</button>
+      <p>
+        Analysts believe this reflects broader structural shifts driven by technology adoption,
+        behavioural changes, and evolving global dynamics.
+      </p>
+      <p>
+        While early signals indicate strong momentum, long-term implications remain unclear
+        and require further observation and validation.
+      </p>
+      <button class="btn share-btn" onclick="shareStory(${id})">Share</button>
       <a href="https://verilay.co.in" target="_blank" class="btn verify-btn">Verify on Verilay</a>
     </div>
   </div>
+  `;
+});
 
-  <div class="card" id="story2">
-    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
-    <div class="content">
-      <div class="tag">⚠️ SOCIAL</div>
-      <h3>Dr Yash Lohiya café sighting in Bandra creates chatter</h3>
-      <p>
-        An unverified observation suggests a long interaction at a Bandra café, drawing curiosity.
-      </p>
-      <button class="btn share-btn" onclick="shareStory(2)">Share</button>
-      <a href="https://verilay.co.in" target="_blank" class="btn verify-btn">Verify on Verilay</a>
-    </div>
-  </div>
+function shareStory(id) {
+  const link = window.location.origin + "/?story=" + id;
+  window.open("https://wa.me/?text=" + encodeURIComponent(link));
+}
 
-  <div class="card" id="story3">
-    <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9">
-    <div class="content">
-      <div class="tag">👀 SOCIAL</div>
-      <h3>Shlok Inani spotted with mystery companion</h3>
-      <p>
-        A Bandra café interaction involving <strong>Shlok Inani</strong> has drawn informal discussion,
-        though no details are confirmed.
-      </p>
-      <button class="btn share-btn" onclick="shareStory(3)">Share</button>
-      <a href="https://verilay.co.in" target="_blank" class="btn verify-btn">Verify on Verilay</a>
-    </div>
-  </div>
+const params = new URLSearchParams(window.location.search);
+const story = params.get("story");
 
-  <!-- ADDITIONAL 15 STORIES -->
-  <script>
-    const topics = [
-      "AI quietly replacing entry-level jobs",
-      "Startup valuations recalibrating globally",
-      "Freelance economy expanding rapidly",
-      "Developers relying on AI tools for coding",
-      "Private communities replacing social media",
-      "Short international travel trends rising",
-      "Hybrid work still dominating offices",
-      "Blockchain startups regaining momentum",
-      "Digital identity becoming core infrastructure",
-      "Venture capital focusing on profitability",
-      "Indian SaaS startups expanding globally",
-      "EdTech firms shifting to hybrid learning",
-      "Content creators building niche communities",
-      "Remote work tools driving productivity",
-      "AI copilots changing daily workflows"
-    ];
-
-    let container = document.querySelector('.container');
-
-    topics.forEach((topic, i) => {
-      let id = i + 4;
-      container.innerHTML += `
-      <div class="card" id="story${id}">
-        <img src="https://source.unsplash.com/800x600/?technology,${id}">
-        <div class="content">
-          <div class="tag">📊 TREND</div>
-          <h3>${topic}</h3>
-          <p>
-            Conversations across industry circles suggest evolving patterns around ${topic.toLowerCase()},
-            reflecting broader changes in how technology and behaviour are shaping modern systems.
-          </p>
-          <button class="btn share-btn" onclick="shareStory(${id})">Share</button>
-          <a href="https://verilay.co.in" target="_blank" class="btn verify-btn">Verify on Verilay</a>
-        </div>
-      </div>
-      `;
-    });
-
-    function shareStory(id) {
-      const link = window.location.origin + "/?story=" + id;
-      window.open("https://wa.me/?text=" + encodeURIComponent(link));
-    }
-
-    const params = new URLSearchParams(window.location.search);
-    const story = params.get("story");
-
-    if (story) {
-      setTimeout(() => {
-        document.getElementById("story" + story)?.scrollIntoView({ behavior: "smooth" });
-      }, 500);
-    }
-  </script>
+if (story) {
+  setTimeout(() => {
+    document.getElementById("story"+story)?.scrollIntoView({behavior:"smooth"});
+  }, 500);
+}
+</script>
 
 </div>
 
