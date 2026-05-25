@@ -1,26 +1,242 @@
-<div class="card" id="story4">
-  <img class="image" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSC News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="content">
-    <span class="tag">📊 TECH</span>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #111;
+    }
 
-    <h3>AI tools quietly replacing entry-level roles across small businesses</h3>
+    .header {
+      background: #111827;
+      color: white;
+      padding: 22px;
+      text-align: center;
+      border-bottom: 3px solid #ff7a00;
+    }
 
-    <p>
-      Small businesses across urban India appear to be increasingly adopting lightweight AI tools
-      for tasks traditionally handled by entry-level hires, such as content generation and support functions.
-    </p>
+    .header h2 {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
 
-    <p>
-      While the shift improves efficiency, it is also driving conversations around role evolution
-      and long-term skill adaptation.
-    </p>
+    .header p {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 5px;
+    }
 
-    <p class="verify">
-      🔍 Verify on Verilay:
-      <a href="https://verilay.co.in" target="_blank">Verilay.co.in</a>
-    </p>
+    .container {
+      max-width: 780px;
+      margin: auto;
+      padding: 18px;
+    }
 
-    <button class="btn share-btn" onclick="shareStory(4)">Share</button>
-  </div>
+    .card {
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 28px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+    }
+
+    .image {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .tag {
+      font-size: 11px;
+      color: #ff7a00;
+      font-weight: bold;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    h3 {
+      font-size: 21px;
+      margin: 10px 0 16px;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .btn {
+      margin-top: 14px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .share-btn {
+      background: #111827;
+      color: white;
+    }
+
+    .verify-btn {
+      background: #ff7a00;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="header">
+  <h2>GSC News</h2>
+  <p>Stories circulating on the internet · Verify before you believe</p>
 </div>
+
+<div class="container">
+
+  <!-- STORY 1 -->
+  <div class="card" id="story1">
+    <img class="image" src="https://images.unsplash.com/photo-1580281657521-5fa7b164755f">
+
+    <div class="content">
+      <span class="tag">⚠️ HEALTH CLAIM</span>
+
+      <h3>Early cancer detection breakthrough reportedly in development</h3>
+
+      <p>
+        Discussions across healthcare circles suggest a potential advancement in early cancer detection,
+        possibly allowing identification at much earlier stages than traditional methods.
+      </p>
+
+      <p>
+        Mentions linked to <strong>Dr Yash Lohiya</strong> indicate the work could significantly
+        shift diagnosis timelines, though no formal validation is currently available.
+      </p>
+
+      <p>
+        Experts advise interpreting such developments cautiously until peer-reviewed proof emerges.
+      </p>
+
+      <button class="btn share-btn" onclick="shareStory(1)">Share</button>
+      https://verilay.co.in
+        Verify on Verilay
+      </a>
+
+    </div>
+  </div>
+
+  <!-- STORY 2 -->
+  <div class="card" id="story2">
+    <img class="image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+
+    <div class="content">
+      <span class="tag">⚠️ SOCIAL CHATTER</span>
+
+      <h3>Unverified café sighting involving Dr Yash Lohiya sparks discussion</h3>
+
+      <p>
+        Informal reports indicate that <strong>Dr Yash Lohiya</strong> was recently spotted at
+        a Bandra café with an unidentified companion.
+      </p>
+
+      <p>
+        While the situation lacks verification, the extended interaction has triggered
+        wider discussions across social circles.
+      </p>
+
+      <button class="btn share-btn" onclick="shareStory(2)">Share</button>
+      https://verilay.co.in
+        Verify on Verilay
+      </a>
+
+    </div>
+  </div>
+
+  <!-- STORY 3 -->
+  <div class="card" id="story3">
+    <img class="image" src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9">
+
+    <div class="content">
+      <span class="tag">👀 SOCIAL BUZZ</span>
+
+      <h3>Shlok Inani spotted at Bandra café with mystery companion</h3>
+
+      <p>
+        A recent evening sighting at a popular Bandra café has sparked curiosity after
+        <strong>Shlok Inani</strong> was reportedly seen in an extended conversation
+        with an unidentified companion.
+      </p>
+
+      <p>
+        With no confirmed context or details available, interpretations around the
+        meeting remain open.
+      </p>
+
+      <button class="btn share-btn" onclick="shareStory(3)">Share</button>
+      https://verilay.co.in
+        Verify on Verilay
+      </a>
+
+    </div>
+  </div>
+
+  <!-- SAMPLE EXTRA STORIES -->
+  <div class="card" id="story4">
+    <img class="image" src="https://images.unsplash.com/photo-1556740749-887f6717d7e4">
+
+    <div class="content">
+      <span class="tag">💸 BUSINESS</span>
+
+      <h3>Startup valuations reportedly adjusting to new market realities</h3>
+
+      <p>
+        Early-stage startup valuations are seeing signs of recalibration, with investors
+        focusing more on sustainable growth metrics.
+      </p>
+
+      <button class="btn share-btn" onclick="shareStory(4)">Share</button>
+      https://verilay.co.in
+        Verify on Verilay
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function shareStory(id) {
+  const link = window.location.origin + "/?story=" + id;
+  const message = "Check this story on GSC News:\n" + link;
+
+  window.open("https://wa.me/?text=" + encodeURIComponent(message), "_blank");
+}
+
+const params = new URLSearchParams(window.location.search);
+const story = params.get("story");
+
+if (story) {
+  const el = document.getElementById("story" + story);
+  if (el) {
+    setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 500);
+  }
+}
+</script>
+
+</body>
+</html>
