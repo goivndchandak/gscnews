@@ -1,154 +1,182 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>GSC News</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      font-family: Georgia, serif;
-      margin: 0;
-      background: #f3f4f6;
-    }
-
-    .header {
-      background: #111827;
-      color: white;
-      padding: 22px;
-      text-align: center;
-      border-bottom: 3px solid #ff7a00;
-    }
-
-    .container {
-      max-width: 760px;
-      margin: auto;
-      padding: 18px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 6px;
-      margin-bottom: 28px;
-      overflow: hidden;
-      border: 1px solid #e5e7eb;
-    }
-
-    .image {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-    }
-
-    .content {
-      padding: 22px;
-    }
-
-    .tag {
-      font-size: 11px;
-      color: #ff7a00;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    h3 {
-      font-size: 22px;
-      margin: 10px 0 16px;
-    }
-
-    p {
-      font-size: 15px;
-      line-height: 1.8;
-      color: #333;
-    }
-
-    .btn {
-      margin-top: 14px;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 20px;
-      font-size: 12px;
-      cursor: pointer;
-      margin-right: 10px;
-    }
-
-    .share-btn {
-      background: #111827;
-      color: white;
-    }
-
-    .verify-btn {
-      background: #ff7a00;
-      color: white;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-  </style>
-</head>
-
-<body>
-
-<div class="header">
-  <h2>GSC News</h2>
-  <p>Stories circulating on the internet · Verify before you believe</p>
-</div>
-
-<div class="container">
-
-  <!-- STORY -->
-  <div class="card" id="story1">
-    <img class="image" src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9">
-
-    <div class="content">
-      <div class="tag">👀 SOCIAL BUZZ</div>
-
-      <h3>Shlok Inani spotted at viral Bandra café with mystery companion</h3>
-
-      <p>
-        A recent evening at one of Bandra’s busiest cafés appears to have quietly drawn
-        attention after <strong>Shlok Inani</strong> was reportedly seen in an extended
-        interaction with an unidentified companion.
-      </p>
-
-      <p>
-        Observers present noted the interaction stood out for its duration and visible
-        engagement, though no context or clarity around the meeting has emerged.
-      </p>
-
-      <p>
-        As with many such sightings in Mumbai’s closely connected social circles,
-        interpretations remain open — with no confirmation on identity, purpose,
-        or association.
-      </p>
-
-      <!-- BUTTONS -->
-      <button class="btn share-btn" onclick="shareStory(1)">Share</button>
-
-      <a href="https://verilay.co.in" target="_blank" class="btn verify-btn">
-        Verify on Verilay
-      </a>
-
-    </div>
+<!-- STORY 4 -->
+<div class="card">
+  <img class="image" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
+  <div class="content">
+    <span class="tag">📊 TECH</span>
+    <h3>AI tools quietly replacing entry-level roles across small businesses</h3>
+    <p>
+      Small businesses across urban India appear to be increasingly adopting lightweight AI tools
+      for tasks traditionally handled by entry‑level hires, such as content generation, data entry,
+      and basic customer support.
+    </p>
+    <p>
+      While this shift is being seen as a cost optimisation measure, it has also sparked conversations
+      around job displacement and skill evolution.
+    </p>
+    <p class="verify">🔍 Verify on Verilay: https://verilay.co.in</p>
+    <button class="share-btn">Share</button>
   </div>
-
 </div>
 
-<script>
+<!-- STORY 5 -->
+<div class="card">
+  https://images.unsplash.com/photo-1556740749-887f6717d7e4
+  <div class="content">
+    <span class="tag">💸 BUSINESS</span>
+    <h3>Early-stage startup valuations reportedly seeing downward corrections</h3>
+    <p>
+      Investor conversations suggest that valuation expectations in early‑stage startups may
+      be adjusting downward after a period of aggressive growth.
+    </p>
+    <p>
+      Founders are reportedly shifting focus toward profitability metrics over expansion
+      narratives.
+    </p>
+    <p class="verify">🔍 Verify on Verilay: https://verilay.co.in</p>
+    <button class="share-btn">Share</button>
+  </div>
+</div>
 
-function getStoryLink(id) {
-  return window.location.origin + "/?story=" + id;
-}
+<!-- STORY 6 -->
+<div class="card">
+  https://images.unsplash.com/photo-1500530855697-b586d89ba3ee
+  <div class="content">
+    <span class="tag">🌍 TRAVEL</span>
+    <h3>Short international trips becoming preferred over long vacations</h3>
+    <p>
+      Travel trends indicate a shift toward shorter, more frequent international trips
+      among urban professionals, driven by flexible work setups.
+    </p>
+    <p>
+      Weekend travel extensions and remote work integration appear to be driving this behaviour.
+    </p>
+    <p class="verify">🔍 Verify on Verilay: https://verilay.co.in</p>
+    <button class="share-btn">Share</button>
+  </div>
+</div>
 
-function shareStory(id) {
-  const link = getStoryLink(id);
-  const message = "Check this story on GSC News:\n" + link;
+<!-- STORY 7 -->
+<div class="card">
+  https://images.unsplash.com/photo-1519389950473-47ba0277781c
+  <div class="content">
+    <span class="tag">🏢 WORK</span>
+    <h3>Return-to-office policies seeing mixed adoption across sectors</h3>
+    <p>
+      Companies attempting structured return‑to‑office policies are reportedly facing resistance,
+      with hybrid models continuing to dominate preference among employees.
+    </p>
+    <p>
+      Some organisations are experimenting with incentive-driven attendance instead of mandates.
+    </p>
+    <p class="verify">🔍 Verify on Verilay: https://verilay.co.in</p>
+    <button class="share-btn">Share</button>
+  </div>
+</div>
 
-  const whatsappURL = "https://wa.me/?text=" + encodeURIComponent(message);
+<!-- STORY 8 -->
+<div class="card">
+  https://images.unsplash.com/photo-1492724441997-5dc865305da7
+  <div class="content">
+    <span class="tag">📱 SOCIAL</span>
+    <h3>Private digital communities replacing public social media engagement</h3>
+    <p>
+      Users increasingly seem to prefer closed groups, private chats, and invite‑only communities
+      over public social platforms for meaningful interactions.
+    </p>
+    <p>
+      Trust, privacy, and relevance are cited as key drivers behind this trend.
+    </p>
+    <p class="verify">🔍 Verify on Verilay: https://verilay.co.in</p>
+    <button class="share-btn">Share</button>
+  </div>
+</div>
 
-  window.open(whatsappURL, "_blank");
-}
+<!-- STORY 9 -->
+<div class="card">
+  https://images.unsplash.com/photo-1454165804606-c3d57bc86b40
+  <div class="content">
+    <span class="tag">📈 ECONOMY</span>
+    <h3>Freelance economy reportedly expanding faster than traditional hiring</h3>
+    <p>
+      Informal estimates suggest that freelance and gig-based work opportunities are growing at a
+      faster pace than conventional full-time hiring in certain industries.
+    </p>
+    <p>
+      Flexibility and global client access continue to attract professionals to this model.
+    </p>
+    <p class="verify">🔍 Verify on Verilay: https://verilay.co.in</p>
+    <button class="share-btn">Share</button>
+  </div>
+</div>
 
-</script>
+<!-- STORY 10 -->
+<div class="card">
+  https://images.unsplash.com/photo-1498050108023-c5249f4df085
+  <div class="content">
+    <span class="tag">🧠 TECH</span>
+    <h3>Developers reportedly relying more on AI pair-programming tools</h3>
+    <p>
+      Conversations indicate that developers are increasingly integrating AI tools into their
+      daily workflows for code generation, debugging, and documentation.
+    </p>
+    <p>
+      The impact on productivity appears significant, though long-term dependency concerns remain.
+    </p>
+    <p class="verify">🔍 Verify on Verilay: https://verilay.co.in</p>
+    <button class="share-btn">Share</button>
+  </div>
+</div>
 
-</body>
-</html>
+<!-- STORY 11 -->
+<div class="card">
+  https://images.unsplash.com/photo-1485217988980-11786ced9454
+  <div class="content">
+    <span class="tag">🏙️ URBAN</span>
+    <h3>Rental prices in metro areas reportedly stabilising after surge</h3>
+    <p>
+      After a period of sharp increases, rental prices in major Indian cities appear to be stabilising,
+      based on recent listings and market observations.
+    </p>
+    <p>
+      Supply adjustments and reduced migration spikes may be contributing factors.
+    </p>
+    <p class="verify">🔍 Verify on Verilay: https://verilay.co.in</p>
+    <button class="share-btn">Share</button>
+  </div>
+</div>
+
+<!-- STORY 12 -->
+<div class="card">
+  https://images.unsplash.com/photo-1531297484001-80022131f5a1
+  <div class="content">
+    <span class="tag">📊 STARTUPS</span>
+    <h3>Investors reportedly prioritising sustainable growth over rapid expansion</h3>
+    <p>
+      Funding conversations indicate a shift in investor sentiment toward sustainable growth models,
+      unit economics, and profitability timelines.
+    </p>
+    <p>
+      The “growth at all costs” mindset appears to be gradually giving way to disciplined scaling.
+    </p>
+    <p class="verify">🔍 Verify on Verilay: https://verilay.co.in</p>
+    <button class="share-btn">Share</button>
+  </div>
+</div>
+
+<!-- STORY 13 -->
+<div class="card">
+  https://images.unsplash.com/photo-1504384308090-c894fdcc538d
+  <div class="content">
+    <span class="tag">🌐 FUTURE</span>
+    <h3>Digital identity verification becoming central to online platforms</h3>
+    <p>
+      Platforms across finance, commerce, and social networks are increasingly focusing on identity
+      verification frameworks to improve trust and reduce misinformation risks.
+    </p>
+    <p>
+      This shift may redefine how users interact with online information and content credibility.
+    </p>
+    <p class="verify">🔍 Verify on Verilay: https://verilay.co.in</p>
+    <button class="share-btn">Share</button>
+  </div>
+</div>
