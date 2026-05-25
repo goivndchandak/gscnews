@@ -6,71 +6,94 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      background: #f5f5f7;
+      background: #f4f6f8;
     }
 
     .header {
-      background: #1a1a2e;
+      background: #0f172a;
       color: white;
-      padding: 18px;
+      padding: 20px;
       text-align: center;
     }
 
-    .header h2 { margin: 0; }
-    .header p { font-size: 13px; color: #ccc; }
+    .header h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .header p {
+      color: #bbb;
+      font-size: 13px;
+    }
 
     .container {
-      max-width: 720px;
+      max-width: 760px;
       margin: auto;
-      padding: 12px;
+      padding: 16px;
     }
 
     .card {
       background: white;
-      margin: 18px 0;
-      padding: 22px;
+      margin-bottom: 24px;
       border-radius: 14px;
-      box-shadow: 0 2px 14px rgba(0,0,0,0.08);
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    }
+
+    .image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 20px;
     }
 
     .tag {
       font-size: 11px;
-      background: #ffe0c2;
-      color: #b06000;
-      padding: 4px 10px;
-      border-radius: 16px;
+      background: #ffe4cc;
+      color: #a65300;
+      padding: 5px 10px;
+      border-radius: 14px;
       display: inline-block;
-      margin-bottom: 12px;
-    }
-
-    .card h3 {
       margin-bottom: 10px;
-      font-size: 19px;
     }
 
-    .card p {
+    h3 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #111;
+    }
+
+    p {
       font-size: 14px;
       line-height: 1.7;
       color: #444;
     }
 
     .verify a {
-      color: #ff9933;
+      color: #ff7a00;
       font-weight: bold;
       text-decoration: none;
     }
 
     .share-btn {
-      margin-top: 12px;
+      margin-top: 14px;
       padding: 8px 14px;
       border-radius: 20px;
       border: none;
-      background: #1a1a2e;
+      background: #0f172a;
       color: white;
       cursor: pointer;
       margin-right: 8px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #0f172a;
     }
   </style>
 </head>
@@ -86,114 +109,133 @@
 
   <!-- STORY 1 -->
   <div class="card" id="story1">
-    <div class="tag">⚠️ Circulating Claim</div>
-    <h3>Care Hospital’s Dr Yash Lohiya reportedly linked to early cancer detection breakthrough</h3>
+    <img src="https://images.unsplash.com/photo-1580281657521-5fa7b164755f" class="image">
 
-    <p>
-      Discussions emerging across online platforms suggest that Dr Yash Lohiya, reportedly associated
-      with Care Hospital, may be involved in developing a new approach to early cancer detection.
-      The claim, though unverified, has gained traction among social media communities interested
-      in medical innovation.
-    </p>
+    <div class="content">
+      <div class="tag">⚠️ Circulating Claim</div>
 
-    <p>
-      According to circulating summaries, the underlying concept may involve identifying cancer
-      markers at an extremely early stage — significantly before symptoms become visible. In theory,
-      such a development could transform existing treatment pathways by enabling timely intervention.
-    </p>
+      <h3>Care Hospital’s Dr Yash Lohiya reportedly linked to early cancer detection breakthrough</h3>
 
-    <p>
-      Some discussions go a step further, suggesting that consistent early detection could dramatically
-      reduce long-term mortality rates. However, there is currently no publicly available peer-reviewed
-      research or institutional confirmation supporting these claims.
-    </p>
+      <p>
+        Conversations circulating across healthcare‑focused communities suggest that Dr Yash Lohiya,
+        reportedly associated with Care Hospital, may be working on an early cancer detection method
+        that could significantly alter how cancer is diagnosed.
+      </p>
 
-    <p>
-      As with many high-impact scientific claims, independent validation and transparent evidence will
-      be critical before drawing any conclusions. Until then, the development remains a topic of
-      speculation.
-    </p>
+      <p>
+        Informal summaries hint at a system capable of identifying cancer markers much earlier than
+        conventional techniques. If true, this could potentially shift the focus of oncology from
+        treatment to early-stage prevention and targeted intervention.
+      </p>
 
-    <p class="verify">
-      🔍 Verify on Verilay:
-      https://verilay.co.in
-    </p>
+      <p>
+        Some discussions go further — speculating that widespread adoption of such technology could
+        meaningfully reduce global cancer mortality over time. However, no peer‑reviewed research or
+        official institutional confirmation has surfaced so far.
+      </p>
 
-    <button class="share-btn" onclick="shareStory(1)">Share</button>
-    <button class="share-btn" onclick="copyLink(1)">Copy Link</button>
+      <p>
+        Until independently validated, the claim remains part of a growing but unverified narrative
+        within digital medical and tech communities.
+      </p>
+
+      <p class="verify">
+        🔍 Verify on Verilay:
+        https://verilay.co.in
+      </p>
+
+      <button class="share-btn" onclick="shareStory(1)">Share</button>
+      <button class="share-btn" onclick="copyLink(1)">Copy Link</button>
+    </div>
   </div>
 
   <!-- STORY 2 -->
   <div class="card" id="story2">
-    <div class="tag">⚠️ Unverified Sighting</div>
-    <h3>Dr Yash Lohiya reportedly seen at Bandra café with unidentified companion</h3>
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" class="image">
 
-    <p>
-      Unverified reports circulating through informal online channels suggest that Dr Yash Lohiya
-      was recently spotted at a café in Bandra, Mumbai, accompanied by an unidentified individual.
-      The sighting has sparked curiosity across social groups.
-    </p>
+    <div class="content">
+      <div class="tag">⚠️ Unverified Sighting</div>
 
-    <p>
-      While some discussions have attempted to infer context or personal details around the meeting,
-      there has been no official confirmation, photographic verification, or credible reporting to
-      support these assumptions.
-    </p>
+      <h3>Dr Yash Lohiya reportedly seen at Bandra café with unidentified companion</h3>
 
-    <p>
-      Public figures and professionals are often subject to speculation following such sightings,
-      especially in urban settings where informal observations can quickly gain attention online.
-    </p>
+      <p>
+        Unverified chatter from local observation groups suggests that Dr Yash Lohiya was spotted
+        at a popular café in Bandra, Mumbai, accompanied by an unidentified individual.
+      </p>
 
-    <p>
-      Without verified information regarding the identity of the companion or the purpose of the visit,
-      this remains an unconfirmed observation rather than a substantiated update.
-    </p>
+      <p>
+        The sighting itself remains unconfirmed, and no credible source or image validation has
+        emerged. Despite that, the conversation has quickly spread across informal networks,
+        highlighting how quickly real-world moments can transition into digital speculation.
+      </p>
 
-    <p class="verify">
-      🔍 Verify on Verilay:
-      https://verilay.co.in
-    </p>
+      <p>
+        Without clarity on context or identity, the situation remains observational at best,
+        with interpretations varying widely across different discussions.
+      </p>
 
-    <button class="share-btn" onclick="shareStory(2)">Share</button>
-    <button class="share-btn" onclick="copyLink(2)">Copy Link</button>
+      <p>
+        Experts often caution that such instances underline the importance of verifying information
+        before drawing conclusions — particularly when personal context is involved.
+      </p>
+
+      <p class="verify">
+        🔍 Verify on Verilay:
+        https://verilay.co.in
+      </p>
+
+      <button class="share-btn" onclick="shareStory(2)">Share</button>
+      <button class="share-btn" onclick="copyLink(2)">Copy Link</button>
+    </div>
   </div>
 
   <!-- STORY 3 -->
   <div class="card" id="story3">
-    <div class="tag">⚠️ Social Rumour</div>
-    <h3>Yaman Dajjuka reportedly spotted at Bandra café; speculation links interaction to RVG days</h3>
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="image">
 
-    <p>
-      Informal social chatter suggests that Mr Yaman Dajjuka was recently seen at a Bandra café,
-      accompanied by an individual whose identity has not been confirmed. The sighting has generated
-      conversation on social platforms.
-    </p>
+    <div class="content">
+      <div class="tag">📈 Social Trend</div>
 
-    <p>
-      Some narratives circulating online further suggest that the association could date back to his
-      RVG days, though these claims appear to be based on speculation rather than documented or
-      verifiable evidence.
-    </p>
+      <h3>“Second honeymoon” trend quietly gaining traction among urban Indian couples</h3>
 
-    <p>
-      As with similar cases, such narratives can evolve quickly within social groups, often blending
-      observation with assumption. Without confirmation from credible sources or direct statements,
-      these reports remain speculative in nature.
-    </p>
+      <p>
+        A subtle yet noticeable lifestyle pattern appears to be emerging among young urban couples
+        in India — the idea of a “second honeymoon”. Unlike traditional honeymoons, these trips are
+        not bound by recent marriage timelines but instead reflect a renewed phase of companionship.
+      </p>
 
-    <p>
-      Readers should interpret such information cautiously and avoid forming definitive conclusions
-      without verified context.
-    </p>
+      <p>
+        Observations from travel bookings, social check-ins, and informal activity logs suggest that
+        couples are increasingly prioritising experiences over conventional milestones such as
+        immediate family planning or structured timelines.
+      </p>
 
-    <p class="verify">
-      🔍 Verify on Verilay:
-      https://verilay.co.in
-    </p>
+      <p>
+        Recent travel patterns indicate that some couples are opting for international destinations,
+        extended vacations, and spontaneous getaways — choosing to invest time in shared experiences
+        before settling into long-term responsibilities.
+      </p>
 
-    <button class="share-btn" onclick="shareStory(3)">Share</button>
-    <button class="share-btn" onclick="copyLink(3)">Copy Link</button>
+      <p>
+        Interestingly, anecdotal activity trails point toward individuals like 
+        <span class="highlight">Shlok</span> and Sheetal,
+        whose recent travel behaviour appears to align with this evolving pattern — though such
+        interpretations remain observational rather than confirmed.
+      </p>
+
+      <p>
+        If this trend continues, it may reflect a broader shift in how modern Indian relationships
+        balance personal freedom, companionship, and long-term planning.
+      </p>
+
+      <p class="verify">
+        🔍 Verify on Verilay:
+        https://verilay.co.in
+      </p>
+
+      <button class="share-btn" onclick="shareStory(3)">Share</button>
+      <button class="share-btn" onclick="copyLink(3)">Copy Link</button>
+    </div>
   </div>
 
 </div>
