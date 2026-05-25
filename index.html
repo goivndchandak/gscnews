@@ -6,10 +6,9 @@
 
   <style>
     body {
-      font-family: Georgia, 'Times New Roman', serif;
+      font-family: Georgia, serif;
       margin: 0;
       background: #f3f4f6;
-      color: #111;
     }
 
     .header {
@@ -20,20 +19,8 @@
       border-bottom: 3px solid #ff7a00;
     }
 
-    .header h2 {
-      margin: 0;
-      font-size: 26px;
-      letter-spacing: 1px;
-    }
-
-    .header p {
-      font-size: 12px;
-      color: #aaa;
-      margin-top: 5px;
-    }
-
     .container {
-      max-width: 780px;
+      max-width: 760px;
       margin: auto;
       padding: 18px;
     }
@@ -61,44 +48,41 @@
       color: #ff7a00;
       font-weight: bold;
       margin-bottom: 8px;
-      display: block;
     }
 
     h3 {
       font-size: 22px;
       margin: 10px 0 16px;
-      line-height: 1.4;
     }
 
     p {
       font-size: 15px;
       line-height: 1.8;
       color: #333;
-      margin-bottom: 14px;
     }
 
-    .verify {
-      margin-top: 16px;
-      font-size: 14px;
-    }
-
-    .verify a {
-      color: #ff7a00;
-      text-decoration: none;
-      font-weight: bold;
+    .btn {
+      margin-top: 14px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      margin-right: 10px;
     }
 
     .share-btn {
-      margin-top: 12px;
-      padding: 8px 16px;
-      border: none;
       background: #111827;
       color: white;
-      border-radius: 20px;
-      cursor: pointer;
-      margin-right: 10px;
-      font-size: 12px;
     }
+
+    .verify-btn {
+      background: #ff7a00;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+    }
+
   </style>
 </head>
 
@@ -111,147 +95,60 @@
 
 <div class="container">
 
-  <!-- STORY 1 -->
+  <!-- STORY -->
   <div class="card" id="story1">
-    <img class="image" src="https://images.unsplash.com/photo-1580281657521-5fa7b164755f">
-
-    <div class="content">
-      <span class="tag">⚠️ HEALTH CLAIM</span>
-
-      <h3>Early cancer detection breakthrough reportedly in development at Care Hospital</h3>
-
-      <p>
-        Conversations emerging across healthcare‑focused digital circles suggest that a potential
-        breakthrough in early cancer detection may be under development. The discussion, though
-        largely informal, has drawn attention due to the high‑impact nature of the claims.
-      </p>
-
-      <p>
-        Mentions circulating online reference work reportedly associated with medical practitioner
-        <strong>Dr Yash Lohiya</strong>, indicating a system that could potentially identify cancer
-        indicators far earlier than current diagnostic approaches allow.
-      </p>
-
-      <p>
-        If substantiated, such an advancement could significantly reshape treatment pathways,
-        shifting the focus from late‑stage intervention to proactive detection and early response.
-      </p>
-
-      <p>
-        However, no peer‑reviewed publication, institutional announcement, or verifiable dataset has
-        yet confirmed these developments. Experts generally advise caution in interpreting early‑stage
-        breakthroughs without supporting evidence.
-      </p>
-
-      <p class="verify">
-        🔍 Verify on Verilay:
-        https://verilay.co.in
-      </p>
-
-      <button class="share-btn" onclick="shareStory(1)">Share</button>
-    </div>
-  </div>
-
-  <!-- STORY 2 -->
-  <div class="card" id="story2">
-    <img class="image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
-
-    <div class="content">
-      <span class="tag">⚠️ SOCIAL CHATTER</span>
-
-      <h3>Unverified sighting of Dr Yash Lohiya at Bandra café draws online attention</h3>
-
-      <p>
-        Informal reports from local observers suggest that <strong>Dr Yash Lohiya</strong>
-        was recently seen at a popular café in Bandra, Mumbai. While such sightings are not unusual,
-        this instance has sparked a noticeable amount of online discussion.
-      </p>
-
-      <p>
-        Those present described a prolonged interaction involving an unidentified companion,
-        though no further context around the meeting has emerged.
-      </p>
-
-      <p>
-        In tightly connected social and professional ecosystems, even routine occurrences can
-        quickly evolve into speculation — particularly when associated with recognisable individuals.
-      </p>
-
-      <p>
-        With no visual confirmation or official context available, the situation remains anecdotal,
-        highlighting how observed moments often blur into interpreted narratives.
-      </p>
-
-      <p class="verify">
-        🔍 Verify on Verilay:
-        https://verilay.co.in
-      </p>
-
-      <button class="share-btn" onclick="shareStory(2)">Share</button>
-    </div>
-  </div>
-
-  <!-- STORY 3 -->
-  <div class="card" id="story3">
     <img class="image" src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9">
 
     <div class="content">
-      <span class="tag">👀 SOCIAL BUZZ</span>
+      <div class="tag">👀 SOCIAL BUZZ</div>
 
       <h3>Shlok Inani spotted at viral Bandra café with mystery companion</h3>
 
       <p>
-        A recent evening at one of Bandra’s busiest cafés appears to have quietly become the subject
-        of social chatter, after a familiar face was reportedly seen in extended conversation with
-        an unidentified companion.
+        A recent evening at one of Bandra’s busiest cafés appears to have quietly drawn
+        attention after <strong>Shlok Inani</strong> was reportedly seen in an extended
+        interaction with an unidentified companion.
       </p>
 
       <p>
-        According to informal observations, <strong>Shlok Inani</strong> was spotted at the venue
-        during peak hours, engaging in what appeared to be a long, uninterrupted interaction.
-        The nature of the meeting remains unclear.
+        Observers present noted the interaction stood out for its duration and visible
+        engagement, though no context or clarity around the meeting has emerged.
       </p>
 
       <p>
-        Individuals present noted the interaction drew subtle attention given its duration and the
-        relatively low‑profile setting, though no conclusions could be established from the
-        observation itself.
+        As with many such sightings in Mumbai’s closely connected social circles,
+        interpretations remain open — with no confirmation on identity, purpose,
+        or association.
       </p>
 
-      <p>
-        In urban social environments like Bandra, where personal and professional interactions
-        often overlap, such moments can quickly transition into broader conversations — even in the
-        absence of verified context.
-      </p>
+      <!-- BUTTONS -->
+      <button class="btn share-btn" onclick="shareStory(1)">Share</button>
 
-      <p>
-        Without confirmed details regarding the identity of the companion or the purpose of the
-        meeting, the sighting remains observational — leaving interpretation open.
-      </p>
+      <a href="https://verilay.co.in" target="_blank" class="btn verify-btn">
+        Verify on Verilay
+      </a>
 
-      <p class="verify">
-        🔍 Verify on Verilay:
-        https://verilay.co.in
-      </p>
-
-      <button class="share-btn" onclick="shareStory(3)">Share</button>
     </div>
   </div>
 
 </div>
 
 <script>
-  function shareStory(id) {
-    const link = window.location.origin + "/?story=" + id;
-    const text = "Read this story on GSC News: " + link;
-    window.open("https://wa.me/?text=" + encodeURIComponent(text));
-  }
 
-  const params = new URLSearchParams(window.location.search);
-  const story = params.get("story");
+function getStoryLink(id) {
+  return window.location.origin + "/?story=" + id;
+}
 
-  if (story) {
-    const el = document.getElementById("story" + story);
-    if (el) {
-      setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 500);
-    }
+function shareStory(id) {
+  const link = getStoryLink(id);
+  const message = "Check this story on GSC News:\n" + link;
+
+  const whatsappURL = "https://wa.me/?text=" + encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+}
+
+</script>
+
+</body>
+</html>
