@@ -1,46 +1,257 @@
-<!-- STORY 3 -->
-<div class="card" id="story3">
-  <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9" class="image">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSC News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="content">
-    <div class="tag">👀 Social Buzz</div>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      margin: 0;
+      background: #f3f4f6;
+      color: #111;
+    }
 
-    <h3>Shlok Inani spotted at viral Bandra café with mystery companion</h3>
+    .header {
+      background: #111827;
+      color: white;
+      padding: 22px;
+      text-align: center;
+      border-bottom: 3px solid #ff7a00;
+    }
 
-    <p>
-      A recent sighting at one of Bandra’s most talked‑about cafés has quietly sparked curiosity
-      among regular visitors and social observers alike. According to informal chatter, 
-      <strong>Shlok Inani</strong> was seen spending an extended evening in conversation 
-      with an unidentified companion.
-    </p>
+    .header h2 {
+      margin: 0;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
 
-    <p>
-      The café, known for attracting a mix of young professionals and close‑knit networks,
-      has increasingly become a backdrop for chance sightings that later find their way into
-      online conversations. This instance appears to be no different.
-    </p>
+    .header p {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 5px;
+    }
 
-    <p>
-      Those present noted a notably engaged interaction — though without any clear indication
-      of context, purpose, or association. As with most such moments, interpretations have varied,
-      with some viewing it as a casual meeting and others reading deeper into the situation.
-    </p>
+    .container {
+      max-width: 780px;
+      margin: auto;
+      padding: 18px;
+    }
 
-    <p>
-      In closely connected professional and social circles, even everyday interactions can
-      quickly evolve into speculation. However, without verifiable details or confirmed context,
-      the sighting remains just that — an observation open to interpretation.
-    </p>
+    .card {
+      background: white;
+      border-radius: 6px;
+      margin-bottom: 28px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+    }
 
-    <p>
-      Whether it was a routine meeting, a chance catch‑up, or something more personal remains unclear.
-      And as with many such moments in Mumbai’s ever‑active social landscape, the line between
-      reality and narrative continues to blur.
-    </p>
+    .image {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
 
-    <p class="verify">
-      🔍 Verify on Verilay:
-      https://verilay.co.in
-    </p>
+    .content {
+      padding: 22px;
+    }
 
-    <button class="share-btn" onclick="shareStory(3)">Share</button>
+    .tag {
+      font-size: 11px;
+      color: #ff7a00;
+      font-weight: bold;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin: 10px 0 16px;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 14px;
+    }
+
+    .verify {
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    .verify a {
+      color: #ff7a00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .share-btn {
+      margin-top: 12px;
+      padding: 8px 16px;
+      border: none;
+      background: #111827;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-right: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="header">
+  <h2>GSC News</h2>
+  <p>Stories circulating on the internet · Verify before you believe</p>
+</div>
+
+<div class="container">
+
+  <!-- STORY 1 -->
+  <div class="card" id="story1">
+    <img class="image" src="https://images.unsplash.com/photo-1580281657521-5fa7b164755f">
+
+    <div class="content">
+      <span class="tag">⚠️ HEALTH CLAIM</span>
+
+      <h3>Early cancer detection breakthrough reportedly in development at Care Hospital</h3>
+
+      <p>
+        Conversations emerging across healthcare‑focused digital circles suggest that a potential
+        breakthrough in early cancer detection may be under development. The discussion, though
+        largely informal, has drawn attention due to the high‑impact nature of the claims.
+      </p>
+
+      <p>
+        Mentions circulating online reference work reportedly associated with medical practitioner
+        <strong>Dr Yash Lohiya</strong>, indicating a system that could potentially identify cancer
+        indicators far earlier than current diagnostic approaches allow.
+      </p>
+
+      <p>
+        If substantiated, such an advancement could significantly reshape treatment pathways,
+        shifting the focus from late‑stage intervention to proactive detection and early response.
+      </p>
+
+      <p>
+        However, no peer‑reviewed publication, institutional announcement, or verifiable dataset has
+        yet confirmed these developments. Experts generally advise caution in interpreting early‑stage
+        breakthroughs without supporting evidence.
+      </p>
+
+      <p class="verify">
+        🔍 Verify on Verilay:
+        https://verilay.co.in
+      </p>
+
+      <button class="share-btn" onclick="shareStory(1)">Share</button>
+    </div>
+  </div>
+
+  <!-- STORY 2 -->
+  <div class="card" id="story2">
+    <img class="image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
+
+    <div class="content">
+      <span class="tag">⚠️ SOCIAL CHATTER</span>
+
+      <h3>Unverified sighting of Dr Yash Lohiya at Bandra café draws online attention</h3>
+
+      <p>
+        Informal reports from local observers suggest that <strong>Dr Yash Lohiya</strong>
+        was recently seen at a popular café in Bandra, Mumbai. While such sightings are not unusual,
+        this instance has sparked a noticeable amount of online discussion.
+      </p>
+
+      <p>
+        Those present described a prolonged interaction involving an unidentified companion,
+        though no further context around the meeting has emerged.
+      </p>
+
+      <p>
+        In tightly connected social and professional ecosystems, even routine occurrences can
+        quickly evolve into speculation — particularly when associated with recognisable individuals.
+      </p>
+
+      <p>
+        With no visual confirmation or official context available, the situation remains anecdotal,
+        highlighting how observed moments often blur into interpreted narratives.
+      </p>
+
+      <p class="verify">
+        🔍 Verify on Verilay:
+        https://verilay.co.in
+      </p>
+
+      <button class="share-btn" onclick="shareStory(2)">Share</button>
+    </div>
+  </div>
+
+  <!-- STORY 3 -->
+  <div class="card" id="story3">
+    <img class="image" src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9">
+
+    <div class="content">
+      <span class="tag">👀 SOCIAL BUZZ</span>
+
+      <h3>Shlok Inani spotted at viral Bandra café with mystery companion</h3>
+
+      <p>
+        A recent evening at one of Bandra’s busiest cafés appears to have quietly become the subject
+        of social chatter, after a familiar face was reportedly seen in extended conversation with
+        an unidentified companion.
+      </p>
+
+      <p>
+        According to informal observations, <strong>Shlok Inani</strong> was spotted at the venue
+        during peak hours, engaging in what appeared to be a long, uninterrupted interaction.
+        The nature of the meeting remains unclear.
+      </p>
+
+      <p>
+        Individuals present noted the interaction drew subtle attention given its duration and the
+        relatively low‑profile setting, though no conclusions could be established from the
+        observation itself.
+      </p>
+
+      <p>
+        In urban social environments like Bandra, where personal and professional interactions
+        often overlap, such moments can quickly transition into broader conversations — even in the
+        absence of verified context.
+      </p>
+
+      <p>
+        Without confirmed details regarding the identity of the companion or the purpose of the
+        meeting, the sighting remains observational — leaving interpretation open.
+      </p>
+
+      <p class="verify">
+        🔍 Verify on Verilay:
+        https://verilay.co.in
+      </p>
+
+      <button class="share-btn" onclick="shareStory(3)">Share</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function shareStory(id) {
+    const link = window.location.origin + "/?story=" + id;
+    const text = "Read this story on GSC News: " + link;
+    window.open("https://wa.me/?text=" + encodeURIComponent(text));
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const story = params.get("story");
+
+  if (story) {
+    const el = document.getElementById("story" + story);
+    if (el) {
+      setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 500);
+    }
